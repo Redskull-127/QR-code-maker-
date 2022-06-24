@@ -1,0 +1,51 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container .text{
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.container .box{
+    color: aliceblue;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container .box h1{
+    font-size: 2.0rem;
+    margin-top: 50px;
+}
+
+.container .box .options{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .box .option{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container Button{
+    margin-top: 70px;
+}
+
+.container img{
+    margin-top: 20px;
+    border-radius: 14px;
+}

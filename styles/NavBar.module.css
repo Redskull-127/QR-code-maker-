@@ -1,0 +1,57 @@
+.NavBar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.NavBar .start{
+    margin: 30px;
+}
+
+.NavBar .end{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.NavBar .end .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.7s;
+    cursor: pointer;
+    margin: 0 10px 0px 25px;
+}
+
+.NavBar .end .items .dot{
+    animation: fadein 0.7s;
+    display: var(--displaydot, none);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0070f3;
+    margin: 0 5px;
+}
+
+.NavBar .end .items:hover{
+    --displaydot: block;
+    transform: translate3d(0, -10px, 0px);
+}
+
+.NavBar a{
+    font-size: 27px;
+    color: white;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
