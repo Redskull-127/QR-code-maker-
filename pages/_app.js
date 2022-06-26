@@ -4,6 +4,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
       <Head>
@@ -24,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <ChakraProvider>
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
       </ChakraProvider>
     </>
   );

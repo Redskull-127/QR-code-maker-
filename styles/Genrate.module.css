@@ -13,18 +13,38 @@
     font-size: 2.5rem;
 }
 
+.container .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .inputdiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .inputdiv button{
+    margin-left: 20px;
+}
+
 .container .box{
     color: aliceblue;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 50px 20px 20px 20px;
 }
 
 .container .box h1{
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     margin-top: 50px;
 }
 
@@ -33,19 +53,49 @@
     justify-content: space-around;
 }
 
+.container .box .size{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
 .container .box .option{
     margin-left: 50px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.container Button{
-    margin-top: 70px;
+.container .box2{
+    color: aliceblue;
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 20px 20px 20px;
+    animation: fade 1s forwards;
 }
 
-.container img{
-    margin-top: 20px;
-    border-radius: 14px;
+.container .box2 img{
+    border-radius: 7px;
+    transition: 0.7s;
+    margin-bottom: 50px;
+}
+
+.container .box2 img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
