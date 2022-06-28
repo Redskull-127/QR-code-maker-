@@ -6,6 +6,8 @@ import Body from "../components/Body";
 import Genrate from "../components/Genrate";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Scan from "../components/Scan";
+
 
 export default function Home() {
   useEffect(() => {
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>QT | QR</title>
         <meta name="QT | QR Code Generator" content="QT" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -23,6 +25,7 @@ export default function Home() {
       <Body />
       <div className={styles.main} data-aos="fade-up">
         <Genrate />
+        <Scan />
       </div>
     </div>
   );
